@@ -8,28 +8,7 @@ A darker variant of the [Paraíso](https://github.com/idleberg/atom-paraiso-dark
 
 ![Screenshot](https://raw.githubusercontent.com/idleberg/atom-paraiso-black/master/screenshot.png)
 
-Also [available](https://github.com/search?q=%40idleberg+paraiso) for these apps:
-
-* BBEdit
-* CodeMirror
-* Color Palettes
-* Eclipse
-* Geany
-* Gedit
-* Google Code Prettify
-* highlight.js
-* IDEA
-* iTerm2
-* Mou
-* Notepad++
-* Prism
-* Pygments
-* Rainbow
-* [Sublime Text](https://github.com/idleberg/ParaisoBlack.tmTheme)
-* Terminal
-* TextMate
-* Windows Command Prompt
-* Xcode
+Also available for [Sublime Text](https://github.com/idleberg/ParaisoBlack.tmTheme)!
 
 ## Installation
 
