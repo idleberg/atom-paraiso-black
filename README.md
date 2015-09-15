@@ -1,8 +1,8 @@
 # Paraíso Black for Atom
 
-[![Version](https://img.shields.io/apm/v/paraiso-black.svg?style=flat-square)](https://atom.io/themes/paraiso-black)
+[![apm](https://img.shields.io/apm/l/paraiso-black.svg?style=flat-square)](https://atom.io/themes/paraiso-black)
+[![apm](https://img.shields.io/apm/v/paraiso-black.svg?style=flat-square)](https://atom.io/themes/paraiso-black)
 [![apm](https://img.shields.io/apm/dm/paraiso-black.png?style=flat-square)](https://atom.io/themes/paraiso-black)
-[![License](https://img.shields.io/apm/l/paraiso-black.svg?style=flat-square)](http://creativecommons.org/licenses/by-sa/4.0/deed.en_US)
 [![Travis branch](https://img.shields.io/travis/idleberg/atom-paraiso-black/master.svg?style=flat-square)](https://travis-ci.org/idleberg/atom-paraiso-black)
 
 A darker variant of the [Paraíso](https://github.com/idleberg/atom-paraiso-dark), a color scheme inspired by the illustrations by Brazilian artist [Rubens LP](http://www.rubenslp.com.br/).
