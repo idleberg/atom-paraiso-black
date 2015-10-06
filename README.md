@@ -20,7 +20,7 @@ Also available for [Sublime Text](https://github.com/idleberg/ParaisoBlack.tmThe
 ### GitHub
 
 1. Change directory to `~/.atom/packages/`
-2. Clone repository `git clone https://github.com/idleberg/atom-paraiso-black.git`
+2. Clone repository `git clone https://github.com/idleberg/atom-paraiso-black paraiso-black`
 3. Enable theme from the *Atom/Preferences* menu
 
 See the official [documentation](https://atom.io/docs/latest/converting-a-text-mate-theme) for details
