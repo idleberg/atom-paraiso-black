@@ -1,32 +1,42 @@
-// Requirements
-var gulp     = require('gulp');
-var recess   = require('gulp-recess');
-var jsonlint = require('gulp-json-lint');
+var gulp = require('gulp');
+var debug = require('gulp-debug');
 var coffeelint = require('gulp-coffeelint');
+var jshint = require('gulp-jshint');
+var jsonlint = require('gulp-jsonlint');
+
+// Tasks
+gulp.task('lint', ['coffeelint', 'jshint', 'jsonlint', 'recess']);
 
 // Exclude node_modules
 var self = '!node_modules/**/*';
 
-// Tasks
-gulp.task('lint', ['coffeelint', 'jsonlint', 'less']);
-
-// Lint CSON files
+// Lint CoffeeScript & CSON files
 gulp.task('coffeelint', function () {
-    gulp.src(['./**/*.cson', self])
+    gulp.src(['./**/*.cson', './**/*.coffee', self])
+        .pipe(debug({title: 'coffeelint:'}))
         .pipe(coffeelint())
         .pipe(coffeelint.reporter())
+});
+
+// Lint LESS files
+gulp.task('recess', function () {
+     gulp.src(['./**/*.less', self])
+        .pipe(debug({title: 'recess:'}))
+        .pipe(recess({"noOverqualifying": false} ))
+        .pipe(recess.reporter());
+});
+
+// Lint JavaScript files
+gulp.task('jshint', function() {
+    return gulp.src(['./**/*.js', self])
+        .pipe(debug({title: 'jshint:'}))
+        .pipe(jshint())
 });
 
 // Lint JSON files
 gulp.task('jsonlint', function() {
    gulp.src(['./**/*.json', self])
-      .pipe(jsonlint())
-      .pipe(jsonlint.report('verbose'));
-});
-
-// Lint LESS files
-gulp.task('less', function () {
-     gulp.src('index.less')
-        .pipe(recess({"noOverqualifying": false} ))
-        .pipe(recess.reporter());
+        .pipe(debug({title: 'jsonlint:'}))
+        .pipe(jsonlint())
+        .pipe(jsonlint.reporter());
 });
