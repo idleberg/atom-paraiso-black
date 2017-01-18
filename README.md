@@ -17,7 +17,7 @@ Also available for [Sublime Text](https://github.com/idleberg/ParaisoBlack.tmThe
 
 * Install theme `apm install paraiso-black` (or use the GUI)
 
-### GitHub
+### Using Git
 
 1. Change directory `cd ~/.atom/packages/`
 2. Clone repository `git clone https://github.com/idleberg/atom-paraiso-black paraiso-black`
